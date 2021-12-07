@@ -16,14 +16,12 @@
     ```powershell
     bin/zookeeper-server-start.sh config/zookeeper.properties
     ```
-    
-    ![Captura de Tela 2021-12-07 às 04.47.39.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a459e778-a0c4-4736-8a09-c6f982d96750/Captura_de_Tela_2021-12-07_as_04.47.39.png)
+    <img width="1182" alt="Captura de Tela 2021-12-07 às 04 47 39" src="https://user-images.githubusercontent.com/19518771/145032157-5b47133f-ae9c-454f-8b95-b61966757d52.png">
     
     ```powershell
     bin/kafka-server-start.sh config/server.properties
     ```
-    
-    ![Captura de Tela 2021-12-07 às 04.52.54.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8203f80c-c6a3-4858-a1ad-7d6b259c1811/Captura_de_Tela_2021-12-07_as_04.52.54.png)
+    <img width="1358" alt="Captura de Tela 2021-12-07 às 04 52 54" src="https://user-images.githubusercontent.com/19518771/145032231-fe757353-9187-440a-9348-0395231795f4.png">
     
     > Criação de um tópico:
     bin/kafka-topics → caminho do aquivo que será executado
@@ -37,8 +35,7 @@
     ```powershell
     bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic COTACAO_ACOES
     ```
-    
-    ![Captura de Tela 2021-12-07 às 05.11.07.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d374f868-aedb-4aa3-a23c-3711610422a8/Captura_de_Tela_2021-12-07_as_05.11.07.png)
+    <img width="1358" alt="Captura de Tela 2021-12-07 às 05 11 07" src="https://user-images.githubusercontent.com/19518771/145032307-c72058cb-e208-4d05-961a-50de128700e9.png">
     
     > Para saber se o tópico foi criado:
     bin/kafka-topics → caminho do aquivo que será executado
@@ -49,8 +46,7 @@
     ```powershell
     bin/kafka-topics.sh --list --bootstrap-server localhost:9092
     ```
-    
-    ![Captura de Tela 2021-12-07 às 05.16.12.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/73459bfa-4c85-470d-a6e9-da462275c1cc/Captura_de_Tela_2021-12-07_as_05.16.12.png)
+    <img width="1358" alt="Captura de Tela 2021-12-07 às 05 16 12" src="https://user-images.githubusercontent.com/19518771/145032357-dcbbf396-800d-4be6-b52a-3ce017cb5d6e.png">
     
     > Criando podutores:
     bin/kafka-console-producer.sh → caminho do arquivo que será executado
@@ -61,8 +57,7 @@
     ```powershell
     bin/kafka-console-producer.sh --broker-list localhost:9092 --topic COTACAO_ACOES
     ```
-    
-    ![Captura de Tela 2021-12-07 às 05.27.02.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f2c6e2a4-ad01-49eb-833f-4b5db2d37ac2/Captura_de_Tela_2021-12-07_as_05.27.02.png)
+    <img width="1358" alt="Captura de Tela 2021-12-07 às 05 27 02" src="https://user-images.githubusercontent.com/19518771/145032470-f3e8efc1-da70-4f47-bd56-aa8f9e3723f9.png">
     
     > Criando Consumidores:
     bin/kafka-console-consumer.sh → caminho do arquivo que será executado
@@ -74,5 +69,4 @@
     ```powershell
     bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic COTACAO_ACOES --from-beginning
     ```
-    
-    ![Captura de Tela 2021-12-07 às 05.34.13.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90a33313-2057-4559-938a-3587de62d2ef/Captura_de_Tela_2021-12-07_as_05.34.13.png)
+    <img width="1358" alt="Captura de Tela 2021-12-07 às 05 34 13" src="https://user-images.githubusercontent.com/19518771/145032507-2e8a9fdd-e8c8-49ac-9e86-bcc0f2f5abb6.png">
