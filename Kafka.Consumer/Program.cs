@@ -1,4 +1,4 @@
-﻿//dotnet run "subscribe" "localhost:9092" "COTACAO_ACOES"
+﻿//dotnet run "manual" "localhost:9092" "COTACAO_ACOES"
 using System;
 using System.Collections.Generic;
 using System.Linq;
