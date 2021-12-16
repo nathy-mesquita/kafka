@@ -70,3 +70,6 @@
     bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic COTACAO_ACOES --from-beginning
     ```
     <img width="1358" alt="Captura de Tela 2021-12-07 às 05 34 13" src="https://user-images.githubusercontent.com/19518771/145032507-2e8a9fdd-e8c8-49ac-9e86-bcc0f2f5abb6.png">
+
+
+    <!--https://github.com/marraia/Kafka-->

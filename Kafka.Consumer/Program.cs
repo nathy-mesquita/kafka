@@ -44,11 +44,8 @@ namespace Kafka.Consumer
                 .SetPartitionsAssignedHandler((c, partitions) =>
                 {
                     Log.Information(
-                            "Partitions incrementally assigned: [" +
-                            string.Join(',', partitions.Select(p => p.Partition.Value)) +
-                            "], all: [" +
-                            string.Join(',', c.Assignment.Concat(partitions).Select(p => p.Partition.Value)) +
-                            "]");
+                            "Partitions incrementally assigned: [" + string.Join(',', partitions.Select(p => p.Partition.Value)) + 
+                            "], all: [" + string.Join(',', c.Assignment.Concat(partitions).Select(p => p.Partition.Value)) + "]");
                 })
                 .SetPartitionsRevokedHandler((c, partitions) =>
                 {
@@ -153,6 +150,7 @@ namespace Kafka.Consumer
             }
         }
 
+        
         private static void PrintUsage()
             => Console.WriteLine("Usage: .. <subscribe|manual> <broker,broker,..> <topic> [topic..]");
 

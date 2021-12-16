@@ -24,7 +24,7 @@ namespace Kafka.Producer
             if (args.Length != 2)
             {
                 Log.Error("Envie o BrokerList - ip/porta para testes no kafka, " +
-                         "envie o topicName - Tópico que receberá a mensagem");
+                        "envie o topicName - Tópico que receberá a mensagem");
                 return;
             }
 
@@ -72,7 +72,7 @@ namespace Kafka.Producer
                     break;
                 }
 
-                string key = null;
+                string key = "1";
                 string val = text;
 
                 int index = text.IndexOf(" ");
