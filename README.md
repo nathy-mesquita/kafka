@@ -29,11 +29,11 @@
     —bootstrap-server [localhost:9092](http://localhost:9092) → onde o server está rodando
     —replication-factor 1 → quantidade de replicas de um tópico em brokers diferentes
     —partitions 1 → quatidade de partições em um tópico
-    —topic COTACAO_ACOES → nome do tópico
+    —topic Nova_Consulta → nome do tópico
     > 
     
     ```powershell
-    bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic COTACAO_ACOES
+    bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic Nova_Consulta
     ```
     <img width="1358" alt="Captura de Tela 2021-12-07 às 05 11 07" src="https://user-images.githubusercontent.com/19518771/145032307-c72058cb-e208-4d05-961a-50de128700e9.png">
     
@@ -51,23 +51,23 @@
     > Criando podutores:
     bin/kafka-console-producer.sh → caminho do arquivo que será executado
     —broker-list [localhost:9092](http://localhost:9092) → comando que será executado, apontando o broker que receberá as mensagens
-    —topic COTACAO_ACOES → nome do tópico que será enviado as mensagens
+    —topic Nova_Consulta → nome do tópico que será enviado as mensagens
     > 
     
     ```powershell
-    bin/kafka-console-producer.sh --broker-list localhost:9092 --topic COTACAO_ACOES
+    bin/kafka-console-producer.sh --broker-list localhost:9092 --topic Nova_Consulta
     ```
     <img width="1358" alt="Captura de Tela 2021-12-07 às 05 27 02" src="https://user-images.githubusercontent.com/19518771/145032470-f3e8efc1-da70-4f47-bd56-aa8f9e3723f9.png">
     
     > Criando Consumidores:
     bin/kafka-console-consumer.sh → caminho do arquivo que será executado
     --bootstrap-server localhost:9092 →Configurações do server onde está as mensagens
-    --topic COTACAO_ACOES → Tópico que escutaremos
+    --topic Nova_Consulta → Tópico que escutaremos
     --from-beginning → Opicional, caso queira esctutar dês do início
     > 
     
     ```powershell
-    bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic COTACAO_ACOES --from-beginning
+    bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic Nova_Consulta --from-beginning
     ```
     <img width="1358" alt="Captura de Tela 2021-12-07 às 05 34 13" src="https://user-images.githubusercontent.com/19518771/145032507-2e8a9fdd-e8c8-49ac-9e86-bcc0f2f5abb6.png">
 
