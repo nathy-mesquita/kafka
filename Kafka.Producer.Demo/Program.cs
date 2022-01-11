@@ -21,7 +21,7 @@ namespace Kafka.Producer.Demo
             {
                 try
                 {
-                    var deliveryResult = await producer.ProduceAsync("Nova_Consulta", new Message<Null, string> { Value = "Secador de Cabelo" });
+                    var deliveryResult = await producer.ProduceAsync("Nova_Consulta", new Message<Null, string> { Value = "Computador gamer" });
 
                     Log.Information($"Entrega '{deliveryResult.Value}' para o Topico:'{deliveryResult.Topic}' partition:'{deliveryResult.Partition}' e offset:'{deliveryResult.Offset}' ");
                 }
