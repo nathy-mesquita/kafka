@@ -33,8 +33,8 @@ namespace Kafka.Consumer
                 {
                     while (true)
                     {
-                        var message = c.Consume(cts.Token);
-                        _logger.Information($"Mensagem: {message.Value} recebida de {message.TopicPartitionOffset}");
+                        var consumerResult = c.Consume(cts.Token);
+                        _logger.Information($"Mensagem: {consumerResult.Message.Value} recebida de {consumerResult.TopicPartitionOffset}");
                     }
                 }
                 catch (OperationCanceledException)
