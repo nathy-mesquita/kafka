@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Kafka.Consumer/Kafka.Consumer.csproj",
+                "${workspaceFolder}/Kafka.Consumer.Demo/Kafka.Consumer.Demo.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Kafka.Consumer/Kafka.Consumer.csproj",
+                "${workspaceFolder}/Kafka.Consumer.Demo/Kafka.Consumer.Demo.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/Kafka.Consumer/Kafka.Consumer.csproj",
+                "${workspaceFolder}/Kafka.Consumer.Demo/Kafka.Consumer.Demo.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

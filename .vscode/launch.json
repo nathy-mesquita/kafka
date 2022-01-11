@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Kafka.Consumer/bin/Debug/netcoreapp3.1/Kafka.Consumer.dll",
+            "program": "${workspaceFolder}/Kafka.Consumer.Demo/bin/Debug/netcoreapp3.1/Kafka.Consumer.Demo.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Kafka.Consumer",
+            "cwd": "${workspaceFolder}/Kafka.Consumer.Demo",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
